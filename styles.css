@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    margin-bottom: 20px;
+    color: #1a0ea1;
+}
+#spag,#steak-chips {
+    color: rgb(60, 60, 207);
+    font-style: italic;
+    font-weight: 900;
+    text-decoration: dashed;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.links {
+    text-align: center; 
+    margin-top: 20px; 
+    font-style: italic;
+}
+
+.links a {
+    display: inline-block; 
+    margin: 0 10px;
+    color: #e43e36;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+h3 {
+    font-style: italic;
+    color: #343333;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color: #F3E5AB;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-color: black;
+    background-color: #FFFDD0;
+    box-shadow: 10px 40px 100px rgba(3, 7, 246, 0.1);
+    border-radius: 41px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #F3E5AB;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.menu a {
+    color: rgb(50, 41, 218);
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.menu a:hover {
+    color: #01dd0c;
+}
+.menu a + a {
+    margin-left: 10px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.feedback-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.feedback-form textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    resize: none; 
+    box-sizing: border-box;
+    overflow: auto;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+.feedback-form input[type="text"]::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.feedback-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #7e7b7b;
+}
+
+
+ul {
+list-style: none;
+    padding-left: 0;  
+    margin-bottom: 20px;
+    display: grid;
+    justify-self: unset;
+
+}
+
+ul li {
+
+    padding-left: 20px;
+    font-size: 16px; 
+    line-height: 1.6; 
+    margin-bottom: 10px;
+}
+
+ul li:hover {
+    background-color: #f0f0f0; 
+    border-radius: 5px;    
+    cursor: pointer;    
+}
+
+section ul {
+    border-left: 3px solid #333;
+    padding-left: 20px;          
+}
+
+.footer {
+    position: fixed;
+    font-size: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #FFFDD0;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+
+
+.p-container {
+    display: flex;
+    align-items: center;
+}
+
+#spag-img, #steak-and-chips-img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+
+.ingredients-list li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.ingredients-list li::before {
+    content: ''; 
+    background-image: url('https://img.freepik.com/premium-vector/vector-green-check-mark-icon-symbol-logo-circle-tick-symbol-green-color-vector-illustration_488400-339.jpg?w=1380');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+}
+
+.ingredients {
+    text-align: initial;
+    font-size: 25px;
+}
