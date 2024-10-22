@@ -16,6 +16,8 @@ h1 {
     text-decoration: dashed;
     text-align: center;
     text-decoration: underline;
+    cursor: pointer;
+    font-size: 30px;
 }
 
 .links {
@@ -41,27 +43,28 @@ h3 {
     font-style: italic;
     color: #343333;
     text-decoration: underline;
+    font-size: 25px;
 }
 
 body {
     font-family: Arial, sans-serif;
     padding-top: 10px;
     padding-bottom: 40px;
-    background-color: #918d8d;
+    background-color: #F3E5AB;
 }
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     border-color: black;
-    background-color: #ffffff;
+    background-color: #FFFDD0;
     box-shadow: 10px 40px 100px rgba(3, 7, 246, 0.1);
     border-radius: 41px;
 }
 .menu {
     display: flex;
     justify-content: center;
-    background-color: #918d8d;
+    background-color: #F3E5AB;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -74,7 +77,7 @@ body {
 }
 
 .menu a:hover {
-    color: #fff;
+    color: #01dd0c;
 }
 .menu a + a {
     margin-left: 10px;
@@ -97,7 +100,7 @@ html {
     color: #333;
 }
 
-.feedback-form input[type="text"] {
+.feedback-form textarea {
     width: 80%;
     height: 100px;
     padding: 10px;
@@ -105,7 +108,13 @@ html {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 15px;
+    resize: none; 
+    box-sizing: border-box;
+    overflow: auto;
+    line-height: 1.5;
+    text-align: left;
 }
+
 
 .feedback-form input[type="text"]::placeholder {
     color: #aaa;
@@ -129,7 +138,7 @@ html {
 
 
 ul {
-list-style: inside;
+list-style: none;
     padding-left: 0;  
     margin-bottom: 20px;
     display: grid;
@@ -147,10 +156,59 @@ ul li {
 
 ul li:hover {
     background-color: #f0f0f0; 
-    border-radius: 5px;        
+    border-radius: 5px;    
+    cursor: pointer;    
 }
 
 section ul {
     border-left: 3px solid #333;
     padding-left: 20px;          
+}
+
+.footer {
+    position: fixed;
+    font-size: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #FFFDD0;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+
+
+.p-container {
+    display: flex;
+    align-items: center;
+}
+
+#spag-img, #steak-and-chips-img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+
+.ingredients-list li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.ingredients-list li::before {
+    content: ''; 
+    background-image: url('https://img.freepik.com/premium-vector/vector-green-check-mark-icon-symbol-logo-circle-tick-symbol-green-color-vector-illustration_488400-339.jpg?w=1380');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+}
+
+.ingredients {
+    text-align: initial;
+    font-size: 25px;
 }
